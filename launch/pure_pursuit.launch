@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+  
+
+  <rosparam command="load" file="$(find f1tenth_control)/params.yaml" />
+
+  <node pkg="f1tenth_control" name="pure_pursuit_node" type="pure_pursuit.py" output="screen"/>
+
+  <node pkg="f1tenth_control" name="visualize_markers_node" type="visualize_points.py" output="screen"/>
+
+
+</launch>
