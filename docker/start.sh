@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ ! -d f1tenth_gym ] ; then
-    git clone https://github.com/f1tenth/f1tenth_gym
+    git clone --depth=1 https://github.com/f1tenth/f1tenth_gym ## use depth 1 due to low speed
 else
     echo f1tenth_gym exists, not cloning, pulling in latest updates.
     cd f1tenth_gym
