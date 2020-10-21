@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ ! -d f1tenth_gym ] ; then
-    git clone --depth=1 https://github.com/f1tenth/f1tenth_gym ## use depth 1 due to low speed
+    git clone https://github.com/f1tenth/f1tenth_gym ## use --depth=1 if internet speed is low
 else
     echo f1tenth_gym exists, not cloning, pulling in latest updates.
     cd f1tenth_gym
